@@ -18,7 +18,7 @@ Array.prototype.twoSum = function() {
 
   this.forEach(element_1 => {
     this.forEach(element_2 => {
-      const index_1 = this.indexOf(element_1);
+      const index_1= this.indexOf(element_1);
       const index_2 = this.indexOf(element_2);
       if (element_1 + element_2 === 0 && index_1 < index_2) {
         new_array.push([index_1, index_2]);
@@ -47,7 +47,8 @@ Array.prototype.transpose = function() {
     sub_array = [];
   }
 
-  return transpose_array
+  return transpose_array;
 }
 
 console.log([[0, 1, 2], [3, 4, 5], [6, 7, 8]].transpose()) // => [[0,3,6], [1,4,7], [2,5,8]]
+
